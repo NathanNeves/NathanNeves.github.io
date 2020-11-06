@@ -1,0 +1,150 @@
+.dragdroparea{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+
+  height: 60vh;
+  width:  80vw;
+}
+
+.coluna{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  width: 37vw;
+  height: 56vh;
+}
+
+.linha{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5vh;
+  height: auto;
+}
+
+.draggable{
+  position: relative;
+  width: 3vw;
+  height: 2vw;
+  border-radius: 7px;
+  background-color: #e25f07;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: 0.5vw;
+  cursor: move;
+  z-index: 10000;
+}
+
+.dragged{
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+
+}
+
+.dropped{
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+.dropable{
+  position: relative;
+  width: 3vw;
+  height: 2vw;
+  border-radius: 7px;
+  border-color: #e25f07;
+  border-style: dashed;
+  border-width: 2.3px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5vw;
+  z-index: 500;
+  color: #e25f07;
+  
+}
+
+.resposta{
+  margin-right: 1vw;
+}
+
+.textodrag{
+  width: 31vw;
+  font-size: 0.8rem;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e25f07;
+  border: 0px none #ffffff;
+  border-radius: 38px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f58d47;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #e25f07;
+}
+::-webkit-scrollbar-track {
+  background: #ebe8e6;
+  border: 0px none #ffffff;
+  border-radius: 55px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #e8e6df;
+}
+::-webkit-scrollbar-track:active {
+  background: #e8e6df;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.invisible{
+  display: none;
+}
+
+.hovered{
+  width: 3.5vw;
+  height: 2.5vw;
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.desabilitado{
+  display: none;
+}
+
+@media(max-width: 568px){
+  .linha{
+      display: inline-block;
+      margin-top:5vh;
+  }
+}
+
+
+@media(max-width: 1023px){
+  .linha{
+    font-size: 0.6rem;
+  }
+
+  .textodrag{
+      font-size: 0.6rem;
+  }
+}

@@ -1,0 +1,90 @@
+
+.bg4circuloamarelo{
+    position: absolute;
+    z-index: -1;
+    
+    height: 80%;
+    width:  80%;
+    
+    top:  -62vh; 
+    left: -23vw;
+}
+
+.bg4circulovermelho{
+    position: absolute;
+    z-index: -1;
+    
+    height: 25%;
+    width:  25%;
+
+    top:     11vh; 
+    right:   -14.3vw;
+}
+
+.bg4linhavermelha{
+    position: absolute;
+    z-index: -1;
+    
+    height: 22%;
+    width:  22%;
+
+    top:  -6.5vh;
+    left: 0vw;
+}
+
+.bg4linhavermelha2{
+    position: absolute;
+    z-index: -1;
+    
+    height: 22%;
+    width:  22%;
+
+    top:    -6.5vh;
+    left:   -15vw;
+}
+
+.bg4linhavermelha3{
+    position: absolute;
+    z-index: -1;
+    
+    height: 22%;
+    width:  22%;
+
+    bottom: 17vh;
+    right:  -12vw;
+}
+
+.bg4circuloamareloazulvazado{
+    position: absolute;
+    z-index: 1;
+    
+    height: 6%;
+    width:  6%;
+
+    top:  1vh;
+    left:  35.5vw;
+
+    transform: rotate(315deg);
+}
+
+.bg4setaamarela{
+    position: absolute;
+    z-index: 1;
+    
+    height: 30%;
+    width:  30%;
+
+    bottom: -13.5vh;
+    left:    7vw;
+}
+
+.bg4circuloamareloazullinha{
+    position: absolute;
+    z-index: 1;
+    
+    height: 65%;
+    width:  65%;
+
+    bottom: -41.5vh;
+    right:    5vw;
+}
