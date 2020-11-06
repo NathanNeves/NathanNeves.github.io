@@ -513,3 +513,9 @@
     display: block;
 
 }
+
+@media(max-width:569px){
+    .check{
+        font-size: 0.6rem !important;
+    }
+}

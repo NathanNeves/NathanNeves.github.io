@@ -921,4 +921,7 @@ button{
     .caixatexto{
         font-size: 0.5rem !important;
     }
+    .check{
+        font-size: 0.6rem !important;
+    }
 }
