@@ -1,3 +1,12 @@
+@media(max-width: 569px){
+
+    .textp{
+        margin-top: -8px !important; 
+    }
+
+}
+
+
 .mod7{
     position: relative;
     display: flex;
