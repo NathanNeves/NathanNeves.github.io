@@ -889,19 +889,14 @@ $("#sair").click(function(){
 });
 
 function mobile(){
-    if( (navigator.userAgent.match(/Android/i))
-        || (navigator.userAgent.match(/webOS/i))
-        || (navigator.userAgent.match(/iPhone/i))
-        || (navigator.userAgent.match(/iPad/i))
-        || (navigator.userAgent.match(/iPod/i))
-        || (navigator.userAgent.match(/BlackBerry/i))
-        || (navigator.userAgent.match(/Windows Phone/i))){
-            screen.orientation.lock('portrait');
-            let modal = new Modal(Swal,true);
-            modal.setText('<div class="contentText"><p><span style="font-weight:700">Navegador Mobile Detectado!</span><br><br>Para melhor visualização do site, recomendamos que use o seu celular na horizontal.</p><br><img style="width: 15vw;" src="./assets/SVG-elementos/mao_rotacao.svg" alt="Mão Rotação Celular Horizontal"></div>')
-            modal.fire();
-        }
+    if($(window).width() < 768){
+        screen.orientation.lock('portrait');
+        let modal = new Modal(Swal,true);
+        modal.setText('<div class="contentText"><p><span style="font-weight:700">Navegador Mobile Detectado!</span><br><br>Para melhor visualização do site, recomendamos que use o seu celular na horizontal.</p><br><img style="width: 15vw;" src="./assets/SVG-elementos/mao_rotacao.svg" alt="Mão Rotação Celular Horizontal"></div>')
+        modal.fire();
     }
+}
+
     
     $(document).ready(()=>{mobile()})
 
