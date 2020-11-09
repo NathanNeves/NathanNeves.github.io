@@ -890,7 +890,7 @@ $("#sair").click(function(){
 
 
 function mobile(){
-    if(window.innerWidth < 800){
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
         screen.orientation.lock('portrait');
         let modal = new Modal(Swal,true);
         modal.setText('<div class="contentText"><p><span style="font-weight:700">Navegador Mobile Detectado!</span><br><br>Para melhor visualização do site, recomendamos que use o seu celular na horizontal.</p><br><img style="width: 15vw;" src="./assets/SVG-elementos/mao_rotacao.svg" alt="Mão Rotação Celular Horizontal"></div>')
