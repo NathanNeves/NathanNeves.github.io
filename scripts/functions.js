@@ -2,6 +2,19 @@ const indicadores = document.querySelectorAll('#indicador')
 const ultimoslide = true;
 const primeiroSlide = document.querySelector('#first')
 
+function iOS() {
+    return [
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod'
+    ].includes(navigator.platform)
+    // iPad on iOS 13 detection
+    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+  }
+
 $("#seta-direita").click(()=>{
     
     let currentSlide = $(".slide.active");
@@ -892,6 +905,11 @@ $("#sair").click(function(){
 function mobile(){
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
         let modal = new Modal(Swal,true);
+        modal.setText('<div class="contentText"><p><span style="font-weight:700">Navegador Mobile Detectado!</span><br><br>Para melhor visualização do site, recomendamos que use o seu celular na horizontal.</p><br><img style="width: 15vw;" src="./assets/SVG-elementos/mao_rotacao.svg" alt="Mão Rotação Celular Horizontal"></div>')
+        modal.fire();
+    }
+
+    if(iOS()){
         modal.setText('<div class="contentText"><p><span style="font-weight:700">Navegador Mobile Detectado!</span><br><br>Para melhor visualização do site, recomendamos que use o seu celular na horizontal.</p><br><img style="width: 15vw;" src="./assets/SVG-elementos/mao_rotacao.svg" alt="Mão Rotação Celular Horizontal"></div>')
         modal.fire();
     }
