@@ -1,7 +1,7 @@
 function changeMenuColor() {
     let janela = $(window).scrollTop();
     let nav = $('#nav');
-    let navLink = $('.nav-link');
+    let navLink = $('.nav-item');
     let btnContato = $('.btn-eContato');
     let logoMenu = $('.navbar-logo');
     let toggler = $('.navbar-toggler');
@@ -9,6 +9,7 @@ function changeMenuColor() {
         nav.removeClass('bg-light-scrolled');
         nav.addClass('bg-light');
         navLink.removeClass('nav-link-scrolled');
+        navLink.addClass('nav-link-default');
         btnContato.removeClass('btn-eContato-scrolled');
         toggler.addClass('toggler');
         logoMenu.attr('src','images/logoBranco.svg');
@@ -18,6 +19,7 @@ function changeMenuColor() {
     nav.removeClass('bg-light');
     nav.addClass('bg-light-scrolled');
     navLink.addClass('nav-link-scrolled');
+    navLink.removeClass('nav-link-default');
     btnContato.addClass('btn-eContato-scrolled');
     logoMenu.attr('src','images/logoGradiente.svg');
 }
@@ -45,7 +47,7 @@ function loadNews(){
             var i = data.indexOf(item) + 1;
             $('.section-7-card-grid').append(`
                 <div class="section-7-card-${i}">
-                    <img style="margin-top:10%" class="wordpress-pic" src="images/Rectangle.png"/>
+                    <img style="margin-top:10%" class="img-responsive wordpress-pic" src="images/quad${i}.jpg"/>
                      <div style="width: 60%">
                         <a target="_blank" href="${item.link}" class="section-7-card-title">${item.title.rendered}</a>
                      </div>
@@ -104,16 +106,17 @@ $(document).ready(()=>{
 
 
   });
-
-
   blink('.titulo-head',500);
   loadNews();
 })
 $(document).scroll(() => {
     changeMenuColor();
-    isElementVisible('.section-1-title',1000);
-    isElementVisible('.section-1-text',1200);
-    isElementVisible('.section-1-image',1500);
+    // isElementVisible('.section-1-title',1000);
+    // isElementVisible('.section-1-text',1200);
+    // isElementVisible('.section-2-title',1000);
+    // isElementVisible('.section-2-text',1200);
+    // isElementVisible('.section-3-title',1000);
+    // isElementVisible('.section-3-text',1200);
 
 });
 
