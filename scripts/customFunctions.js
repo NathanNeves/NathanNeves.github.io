@@ -111,12 +111,20 @@ $(document).ready(()=>{
 })
 $(document).scroll(() => {
     changeMenuColor();
-    // isElementVisible('.section-1-title',1000);
-    // isElementVisible('.section-1-text',1200);
-    // isElementVisible('.section-2-title',1000);
-    // isElementVisible('.section-2-text',1200);
-    // isElementVisible('.section-3-title',1000);
-    // isElementVisible('.section-3-text',1200);
+    isElementVisible('.section-1-left',1000);
+    isElementVisible('.section-1-image',1000);
+    isElementVisible('.image-nascimento',1000);
+    isElementVisible('.juridicas',1200);
+    isElementVisible('.image3',1000);
+    isElementVisible('.section-3-area',1200);
+    isElementVisible('.section-4-text',1000);
+    isElementVisible('.section-4-image',1200);
+    isElementVisible('.card1',1000);
+    isElementVisible('.card2',1200);
+    isElementVisible('.card3',1400);
+    isElementVisible('.card4',1600);
+    isElementVisible('.section-5-text',1800);
+
 
 });
 

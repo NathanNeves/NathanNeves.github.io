@@ -95,6 +95,7 @@ body::-webkit-scrollbar-thumb {
     box-sizing: border-box;
     box-shadow: 4.70926px 3.1395px 7.84876px rgba(0, 0, 0, 0.25);
     transition: display 0.8s;
+    display: none;
 
 }
 
@@ -258,8 +259,6 @@ h2.titulo-head:after{
     content:'PRESS START';
     z-index: -1;
     position: absolute;
-    left: 35%;
-    top: 23%;
     font-family: "PressStart2P", PressStart2P, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -274,8 +273,7 @@ h2.titulo-head:after{
 
 
 .section-1{
-    min-height: 765px;
-    height: auto;
+    min-height: auto;
     width: 100%;
     background-color: #FAFAFA !important;
     display:flex;
@@ -321,7 +319,7 @@ h2.titulo-head:after{
 }
 
 .section-1-text-paragraph{
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 }
 
 .section-2{
@@ -379,6 +377,7 @@ h2.titulo-head:after{
     font-weight: 300;
     font-size: 1.1rem;
     text-align: left;
+    margin-left: -100px;
 }
 .section-3-text > span > p{
     text-align: left;
@@ -417,7 +416,7 @@ h2.titulo-head:after{
 .section-4{
     background-color: #309A8C;
     width: 100%;
-    height: 100vh;
+    min-height: auto;
     display: flex;
     justify-content: flex-end;
 }
@@ -431,7 +430,7 @@ h2.titulo-head:after{
 
 .section-6{
     width:100%;
-    height: 100vh;
+    min-height: auto;
     background-color: #D13B95;
     display: flex;
     flex-direction: column;
@@ -440,8 +439,7 @@ h2.titulo-head:after{
 
 .carousel-company{
     width:80%;
-    min-height: 56vh;
-    height: auto;
+    min-height: auto;
     margin-left: 10%;
     margin-top: 0;
     padding: 0 10% 10% 10%;
@@ -463,13 +461,13 @@ h2.titulo-head:after{
 .carousel-depo{
     font-style: italic;
     text-align: left;
-    font-size: 0.8em;
+    font-size: 1.1em;
     color: white;
 }
 
 .carousel-depo-company{
     text-align: left;
-    font-size: 1em;
+    font-size: 1.2em;
     color: white;
 }
 
@@ -504,13 +502,13 @@ h2.titulo-head:after{
     font-family: PressStart2P;
     font-size:2rem;
     color:white;
-    text-align: right;
+    text-align: left;
 }
 
 .section-5{
     background-color: #FAFAFA !important;
     width: 100%;
-    min-height: 100vh !important;
+    min-height: auto !important;
     display: flex;
     flex-direction: column;
     padding-top: 0;
@@ -519,7 +517,7 @@ h2.titulo-head:after{
 
 .section-5-cards-layout{
     width: 100%;
-    height:45%;
+    min-height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -618,27 +616,27 @@ h2.titulo-head:after{
 
 
 a.section-7-card-title{
-    font-family: Sora !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-size: 1rem !important;
+    font-family: Sora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
     color:#4F4F4F;
 }
 
 
 a.section-7-card-title:hover{
-    font-family: Sora !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-size: 1rem !important;
+    font-family: Sora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
     color:#4F4F4F;
 }
 
 a.section-7-card-title:visited{
-    font-family: Sora !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-size: 1rem !important;
+    font-family: Sora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
     color:#4F4F4F;
 }
 
@@ -786,7 +784,7 @@ a.section-7-card-title:visited{
     color:#828282;
     font-family: 'Sora',sans-serif;
     font-style: normal;
-    text-align: right;
+    text-align: left;
     font-weight: 300;
     color:white;
 }
@@ -904,6 +902,16 @@ li.section-4-list-item5::after{
 
     .modalHeaderText{
         font-size: 0.7rem;
+    }
+
+    .section-3-area {
+        color: #828282;
+        font-family: 'Sora',sans-serif !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: left;
+        margin-left:2%;
     }
 
     .modalCloseButton{
@@ -1033,7 +1041,7 @@ li.section-4-list-item5::after{
     .section-3-image{
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 90%;
         align-items: center;
     }
 
@@ -1080,10 +1088,10 @@ li.section-4-list-item5::after{
         text-align: center;
     }
     .section-3-image > img {
-        margin: 10%;
+        margin-left:15%;
         text-align: center;
         align-self: center;
-        max-width: 75%;
+        max-width: 100%;
     }
 
     .section-1-image{
@@ -1178,7 +1186,7 @@ li.section-4-list-item5::after{
     }
 
     .section-3-image > img {
-        margin-top: 50px;
+        margin-top: 20px;
         display:flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -1199,6 +1207,389 @@ li.section-4-list-item5::after{
 
 @media (max-width:600px){
     /* for phones */
+}
+
+
+@media(min-width:1439px){
+    h2.titulo-head:after{
+        content:'PRESS START';
+        z-index: -1;
+        position: absolute;
+        left: 34% !important;
+        top: 16%;
+        font-family: "PressStart2P", PressStart2P, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        background: linear-gradient(90deg,  #2B3E47 -5.17%, #D13B95 50.14%, #309A8C 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor:pointer !important;
+    
+    }
+
+
+}
+
+@media(min-width:1280px){
+    h2.titulo-head:after{
+        content:'PRESS START';
+        z-index: -1;
+        position: absolute;
+        left: 31%;
+        top: 16%;
+        font-family: "PressStart2P", PressStart2P, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        background: linear-gradient(90deg,  #2B3E47 -5.17%, #D13B95 50.14%, #309A8C 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor:pointer !important;
+    
+    }
+}
+
+@media(min-width:1366px){
+    h2.titulo-head:after{
+        content:'PRESS START';
+        z-index: -1;
+        position: absolute;
+        left: 32% !important;
+        top: 16%;
+        font-family: "PressStart2P", PressStart2P, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        background: linear-gradient(90deg,  #2B3E47 -5.17%, #D13B95 50.14%, #309A8C 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor:pointer !important;
+    
+    }
+}
+
+@media(min-width:1080px){
+    .section-3-area{
+        margin-left: 2%;
+    }
+
+    h2.titulo-head:after{
+        content:'PRESS START';
+        z-index: -1;
+        position: absolute;
+        left: 37% !important;
+        top: 16%;
+        font-family: "PressStart2P", PressStart2P, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        background: linear-gradient(90deg,  #2B3E47 -5.17%, #D13B95 50.14%, #309A8C 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor:pointer !important;
+    
+    }
+
+}
+
+
+@media(min-width:1536px){
+    h2.titulo-head:after{
+        content:'PRESS START';
+        z-index: -1;
+        position: absolute;
+        left: 37%;
+        top: 16%;
+        font-family: "PressStart2P", PressStart2P, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        background: linear-gradient(90deg,  #2B3E47 -5.17%, #D13B95 50.14%, #309A8C 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor:pointer !important;
+    
+    }
+}
+
+
+@media(min-width:2560px){
+    label{
+        font-size:2rem;
+    }
+
+    input[type=text]{
+         height: 70px;
+         font-size:2rem;
+    }
+
+    .section-7{
+        height: 115vh;
+    }
+
+    textarea{
+        height: 300px;
+        font-size:2rem;
+    }
+
+    .modalCloseButton{
+        font-size:1.5rem;
+    }
+
+    .sendModalButton{
+        margin-top:5% !important;
+        width:50%;
+        height: 100px;
+    }
+
+    #enviar{
+        font-size: 1.5rem;
+    }
+
+    .section-7-card-1{
+        height: 900px !important;
+    }
+
+    .section-7-card-2{
+        height: 900px !important;
+    }
+
+    .section-7-card-3{
+        height: 900px !important;
+    }
+
+    .modalHeaderText{
+        font-size: 1.5rem;
+    }
+
+    .section-7-card-title{
+        font-size: 2rem !important;
+
+    }
+
+    .section-7-subtitle{
+        font-size: 1.5rem;
+    }
+
+
+    a.section-7-card-title:visited{
+        font-family: Sora ;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3rem ;
+        color:#4F4F4F;
+    }
+
+
+    h2.titulo-head:after{
+        content:'PRESS START';
+        z-index: -1;
+        position: absolute;
+        left: 29% !important;
+        top: 16%;
+        font-family: "PressStart2P", PressStart2P, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6rem;
+        text-align: center;
+        background: linear-gradient(90deg,  #2B3E47 -5.17%, #D13B95 50.14%, #309A8C 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor:pointer;
+    
+    } 
+
+    
+    h2.titulo-head{
+    z-index: 1;
+    padding: 10px;
+    position: relative;
+    left: 0%;
+    top: 50%;
+    font-family: "PressStart2P", PressStart2P, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6rem;
+    text-align: center;
+    color: #F2F2F2;
+    cursor:pointer !important;
+    }
+
+    .nav-link{
+        font-size: 1.3rem;
+    }
+
+    .btn-eContato{
+        font-size: 1.3rem;
+    }
+    .section-1{
+        height:95vh ;
+    }
+
+    .img-responsive{
+        width: 90%;
+        height: 50%;
+    }
+    
+    .section-1-text-paragraph{
+        font-size: 2rem;
+    }
+
+    .section-1-title{
+        font-size: 3rem;
+    }
+
+    .img-decor{
+        width: 6%;
+    }
+
+    .pixel-9{
+        display: none;
+    }
+
+    .section-2-title{
+        font-size:3rem;
+    }
+
+    .section-2-text{
+        font-size:2rem;
+    }
+
+    .section-3-title{
+        font-size:3rem;
+    }
+
+    .section-3-text{
+        font-size:2rem;
+    }
+    
+    .section-3{
+        height: 95vh;
+    }
+
+    .section-4{
+        height: 115vh;
+    }
+
+    .section-5{
+        height: 115vh;
+    }
+
+    .section-4-text-paragraph{
+        font-size:2rem;
+    }
+
+    .section-4-title{
+        font-size:3rem;
+    }
+    li.section-4-list-item1::after{
+        font-size:3rem !important;
+    }
+
+    li.section-4-list-item2::after {
+        content: "■";
+        font-size: 3rem !important;
+        color: #3D5165;
+        margin-left: 2%;
+    }
+
+    li.section-4-list-item3::after {
+        content: "■";
+        font-size: 3rem !important;
+        color: #A7FFF3;
+        margin-left: 2%;
+    }
+    li.section-4-list-item4::after {
+        content: "■";
+        font-size: 3rem !important;
+        color: #F56CBF;
+        margin-left: 2%;
+    }
+
+    li.section-4-list-item5::after {
+        content: "■";
+        font-size: 3rem !important;
+        color: #22756A;
+        margin-left: 2%;
+    }
+
+    .card-player{
+        font-size:1.3rem;
+    }
+
+    .card-name{
+        font-size: 1.3rem;
+    }
+
+    .card-oab{
+        font-size:1.3rem;
+    }
+
+    .player-image{
+        width: 400px;
+    }
+
+    .section-5-title{
+        font-size:3rem;
+    }
+
+    .section-5-paragraph{
+        font-size: 2rem;
+    }
+
+    .carousel-depo{
+        font-size:2.4rem;
+    }
+
+    .carousel-depo-company{
+        font-size:1.5rem;
+    }
+
+   .carousel-background{
+       width: 480px;
+       height: 480px;
+   }
+
+   .carousel-image{
+       width:240px;
+       height:300px;
+   }
+
+   .section-7-title{
+       font-size:3rem;
+   }
+
+   .section-8-title{
+       font-size: 3rem;
+   }
+
+   .section-8-subtitle{
+       font-size:2rem;
+   }
+
+   .section-9-center{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .section-10 > div> div> div> .item-footer {
+        color: #828282;
+        font-size: 1.5rem;
+        float: left;
+    }
+
+    .p-1{
+        font-size:1.5rem !important;
+    }
+
+    .footer{
+        font-size:1.3rem !important;
+    }
+
+    
+
 }
 
 
