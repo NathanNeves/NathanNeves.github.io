@@ -42,7 +42,7 @@ function blink(elem,ms){
 
 function loadNews(){
     var i;
-    $.get('http://bcpadvogados.com.br/wp-json/wp/v2/posts?per_page=3&_embed',function (data) {
+    $.get('https://bcpadvogados.com.br/wp-json/wp/v2/posts?per_page=3&_embed',function (data) {
         for(item of data){
             var i = data.indexOf(item) + 1;
             $('.section-7-card-grid').append(`
@@ -88,7 +88,7 @@ $(document).ready(()=>{
         console.log(assunto);
         console.log(email);
         console.log(mensagem);
-        $.post('http://bcpadvogados.com.br/wp-json/contact-form-7/v1/contact-forms/228/feedback',{
+        $.post('https://bcpadvogados.com.br/wp-json/contact-form-7/v1/contact-forms/228/feedback',{
             "_wpcf7": 228,
             "_wpcf7_version": "5.1.7",
             "_wpcf7_locale": "pt_PT",
